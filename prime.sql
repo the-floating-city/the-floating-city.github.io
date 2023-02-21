@@ -1,4 +1,4 @@
-CREATE database prime
+CREATE DATABASE prime;
 use prime
 
 CREATE TABLE prime.dbo.prime (
