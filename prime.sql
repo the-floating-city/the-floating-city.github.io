@@ -1,10 +1,13 @@
 CREATE DATABASE prime;
 use prime
 
-CREATE TABLE prime.dbo.prime (
+CREATE TABLE prime.dbo.Prime (
 	id bigint NOT NULL,
 	prime bigint NOT NULL
 );
+
+CREATE CLUSTERED INDEX IX_Prime   
+    ON dbo.Prime (id);   
 
 CREATE PROCEDURE dbo.getPrime @prime bigint
 AS 
